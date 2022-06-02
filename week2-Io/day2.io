@@ -89,3 +89,40 @@ Duck walk := method(
 disco := Duck clone
 disco ancestors 
 
+// Self study
+
+List slotNames println
+
+Matrix := List clone
+Matrix dim := method(x, y,
+    self xSize := x
+    self ySize := y
+    y repeat(self append(Range 0 to(x) asList() map(0)))
+)
+Matrix set := method(x, y, value,
+    self at(x) atPut(y, value)
+)
+Matrix get := method(x, y, 
+    self at(x) at(y)
+)
+Matrix print = method(
+    for(i, 1, xSize, 
+        for(j, 1, ySize, 
+            //i print
+            //j print
+            //">" print
+            get(i,j) print
+            " " print
+        )
+        "" println
+    )
+)
+
+firstMatrix := Matrix clone
+A := firstMatrix dim(4,7)
+A set(2,3,7)
+A set(4,4,1)
+A println
+"" println
+A xSize println
+A ySize println
