@@ -1,4 +1,4 @@
-// Io: Day 1
+// Io: Day 2
 /// Conditionals and loops
 "Conditionals and loops" println
 i := 1
