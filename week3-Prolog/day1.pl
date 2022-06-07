@@ -1,5 +1,6 @@
 :- initialization main.
 
+%% Day 1
 % Basic facts
 likes(wallace, cheese).
 likes(grommit, cheese).
